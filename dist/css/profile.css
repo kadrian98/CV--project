@@ -1,0 +1,16 @@
+.Profile {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.Profile__title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #111;
+}
+
+.Profile__thema {
+  font-size: 1.25rem;
+}
+/*# sourceMappingURL=profile.css.map */

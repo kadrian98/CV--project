@@ -1,0 +1,45 @@
+.slider{
+          width: 100%;
+          margin: auto;
+          margin-top: 10rem;
+          
+          
+          
+          &__row{     
+                    width: 100%;
+                    background-color: #e0e5eb;
+
+                    &-details{
+                              text-align: center;
+                              width: 40%;
+                              margin: auto;
+                              padding-top: 4rem;
+                    }
+
+                    &-img{
+                              margin: auto;
+                              border-radius: 50%;
+                              border: 3px solid #ec563d;;
+                    }
+
+                    &-paragraph{
+                              color: #111;
+                              font-size: 18px;
+                              line-height: 2;
+                              margin-top: 1rem;
+
+
+                    }
+
+                    &-header{
+                              font-size: 20px;
+                              margin-top: 1.5rem;
+                              letter-spacing: .5rem;
+                              color: #555c66;
+                              padding-bottom: 3rem;
+                    }
+                              
+                    
+
+          }
+}

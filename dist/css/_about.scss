@@ -1,0 +1,85 @@
+.about{
+          width: 70%;
+          margin: auto;
+          margin-top: 8rem;
+          margin-bottom: 5rem;
+
+          &__intro{
+                    width: 45%;
+                    text-align: left;
+
+                    &-title{
+                              font-size: 42px;
+                              text-transform: uppercase;
+                              color: #111;
+                              margin-bottom: 3rem;
+                              border-bottom: .5rem solid red;
+
+                    }
+
+                    &-text{
+                              font-size: 18px;
+                              color: #111;
+                              font-weight: 700;
+                              margin-bottom: 1.5rem;
+                    }
+
+                    &-text2{
+                              font-size: 20px;
+                              color: #111;
+                              line-height: 1.6;
+                              margin-bottom: 1.5rem;
+                    }
+
+                    &-img{
+                              width: 80%;
+                              z-index: -1;
+                    }
+
+                    &-absolute{
+                              width: 40%;
+                              line-height: 2;
+                              display: flex;
+                              
+                              .absolute-text{
+                                        font-size: 16px;
+                                        color: #111;
+                                        margin-top: 2rem;
+                                        
+                              }
+
+                              
+                    }
+          }
+
+          &__photo{
+                    position: relative;
+                    width: 70%;
+
+                    &-img{
+                              width: 100%;
+                              height: auto;
+                    }
+                    
+                    &-contact{
+                              background-color: #ec563d;
+                              position: absolute;
+                              top: 80%;
+                              right: 5%;
+                              width: 35%;
+                              color: #fff;
+                              padding: 30px;
+                              line-height: 2;
+
+                              &-email, &-role, &-phone{
+                                        font-size: 18px;
+                              }
+
+                              &-address, &-position, &-number{
+                                        font-size: 20px;
+                              }
+                                      
+                    }
+          }
+          
+}

@@ -1,0 +1,74 @@
+.profile{
+          width: 100%;
+          margin: auto;
+          text-align: center;
+          margin-top: 3rem;
+          
+          &__description{
+                    &-title{
+                              text-transform: uppercase;
+                              font-size: 3rem;
+                              color: #111;
+                    }
+
+                    &-thema{
+                              font-size: 1.25rem;
+                              margin-top: 1rem;
+                    }
+
+          }
+
+          &__about{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 70%;
+                    margin: auto;
+                    margin-top: 4rem;
+                    
+                    &-about{
+                              .about-title{
+                                        margin-bottom: 1.5rem;
+                              }
+                              width: 100%;
+                              text-align: left;
+                              line-height: 2.2;
+
+                    }
+
+                    &-img{       
+                              width: 100%;
+                              .thumbnail{
+                                        border-radius: 50%;
+                                        width: 239px;
+                              }
+                    }
+
+                    &-details{
+                              
+                              width: 100%;
+                              text-align: left;
+                              line-height: 2;
+
+                              .details{
+                                        margin-bottom: 1rem;
+                              }
+                              .name, .age, .location{
+                                        font-size: 16px;
+                                        color: #111;
+
+                              }
+
+                    }
+
+                    &-social{
+                              margin-top: 1rem;
+                              font-size: 24px;
+                              cursor: pointer;
+                    }
+                    
+          }
+
+          
+}
+
