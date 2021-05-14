@@ -1,5 +1,4 @@
-@import 'profile', 'about', 'offers', 'square', 'slider', 'contact', 'footer';
-
+@import 'CV', 'profile', 'about', 'offers', 'square', 'slider', 'contact', 'footer';
 
 *{
           margin: 0;
@@ -10,6 +9,7 @@
 
 .intro{
           width: 100%;
+          
 
           &__nav{
                     background-color: #f2f2f2;
@@ -17,155 +17,216 @@
                     padding-bottom: 1.5rem;
                     margin: auto;
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: space-around;
                     align-items: center;
-                    
+
+                    button{
+                              display: none;
+                    }
 
                     &-list{
-                              width: 30%;
+                              width: 20%;
                               display: flex;
+                              list-style-type: none;
                               justify-content: space-between;
-                              list-style-type: none;                          
-                              
+                              font-size: 22px;
                     }
-          }
 
-          .burger{
-                    display: none;
-                    cursor: pointer;
-                    div{
-                              width: 2rem;
-                              height: 0.3rem;
-                              margin: 0.3rem;
-                              background-color: #000;
-                    }
+                    &-item{
+                                        padding: 1rem;
+                              }
+
                     
+          }       
+  
+}
+
+
+@media screen and (max-width:1200px){
+
+
+.footer{
+          &__paragraph{
+                    width: 60%;
+          }
+}
+.contact{
+          &__div{
+                    width: 90%;
+          }
+
+          &__form{
+                    width: 100px;
+                    margin: 1rem;
+          }
+}
+
+.slider{
+          &__row{
+                    &-details{
+                              width: 80%;
+                    }
           }
 }
 
 
 
-@media screen and (max-width:911px){
 
-          body{
-                    overflow-x: hidden;
+.squares{
+          width: 100%;
+          &__element{
+                    width: 50%;
+
           }
-          
-          .intro{
-                    &__nav-list{
-                              position: absolute;
-                              right: 0;
-                              height: 70vh;
-                              top: 5rem;
-                              background-color: #f2f2f2;
-                              display: flex;
-                              justify-content: space-around;
-                              flex-direction: column;
-                              align-items: center;
-                              transform: translateX(100%);
-                              transition: transform 0.5s ease-in;
+}
+
+
+.offers{
+          &__offer{
+                    width: 50%;
+          }
+}
+
+.about{
+
+          width: 100%;
+
+          &__intro{
+                    width: 60%;
+                    margin: auto;
+
+                    &-title{
+                              border: none;
                     }
 
-                    &__nav-item{
-                    opacity: 1;
+                    &-absolute{
+                              padding: 1rem;
                     }
-
-          .burger{
-                    display: block;
-          }
           }
 
-}   
-
-.nav-active
-{
-          transform: translateX(0%);
-}
-
-@keyframes navlinkFade{
-
-          from{
-                    opacity: 0;
-                    transform: translateX(50px);
-          }
-          to{
-                    opacity: 1;
-                    transform: translateX(0px);
-          }
-
-
-}
-
-.CV
-{         
-
-          &__dsc-background{
-                    z-index: -1;
-                    position: absolute;
-                    height: 70vh;
-                    width: 100%;
-          }
-
-          &__content{
-                    display: flex;
-                    justify-content: space-between;
+          &__photo{
                     width: 100%;
                     margin: auto;
-                    align-items: center;
+                    position: relative;
 
-                    img{
-                   
-                              height: 70vh;
-                    }
+                    &-content{
+                            
 
-                    &-intro
-                    {
-                              width: 25%;
-                              margin-left: 25%;
-
-                              .orange{
-                              background-color: #ec563d;
-                              border-radius: 50%;
-                              width: 75px;
-                              height: 75px;
-
-                              }
-                              h1{
-                                        font-size: 96px;
-                                        color: #111;
-                                        line-height: 1;
-                                        margin-top: 1rem;
-                                        
-                              }
-                              p{
-                                        font-size: 16px;
-                                        color: #111;
-                                        font-weight: 600;
-                                        margin-top: 1rem;
-                                        text-align: justify;
-                              }
-                              button{
-                                        text-transform: uppercase;
-                                        font-size: 20px;
-                                        padding: 10px 30px;
-                                        background-color: #000;
-                                        cursor: pointer;
-                                        color: #fff;
-                                        border: none;
-                                        letter-spacing: 2px;
-                                        margin-top: 3rem;
-                              }
-
-                              button:hover{
-                                        background-color: #ec563d;
-                              }
-                    
                     }
           }
-
 }
 
 
 
 
 
+.CV{
+          &__content{
+                    &-intro{
+                              width: 40%;
+                              padding: 1rem;
+
+                              h1{
+                                        font-size: 72px;
+                              }
+                    }
+          }
+}
+.profile{
+
+          &__about{
+                   
+                    width: 90%;
+                    display: flex;
+                    justify-content: space-around;
+                    margin: auto;
+          
+          
+          
+          
+          }
+
+}
+
+}
+
+
+
+
+@media screen and (max-width: 911px) {
+
+
+.profile{
+          &__about{
+                    width: 90%;
+                    margin: auto;
+                    display: inline-block;
+                    
+          }
+}
+
+.intro__nav{
+
+          &-list{
+                    display: none;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    height: 100vh;
+                    justify-content: space-around;
+          }
+          .show{
+                    display: flex;
+          }
+
+          
+
+          
+
+          button{
+                    display: block;
+          }
+          } 
+
+.CV{
+          &__content{
+                    
+                    display: inline-block;
+                    align-items: center;
+                    text-align: center;
+
+
+                    &-intro{
+                              width:90%;
+                              margin: auto;
+                              text-align: center;
+
+                              div{
+                                        width: 75px;
+                                        margin: auto;
+                              }
+                              p{
+                                        text-align: center;
+                              }
+                    }
+
+                    &-photo{
+                              width: 80%;
+                              margin: 3rem 0 3rem 0;
+                    }
+          }
+
+
+
+}
+}
+
+@media screen and (max-width: 575px){
+
+.intro{
+          width: 100%;
+}  
+
+
+}
