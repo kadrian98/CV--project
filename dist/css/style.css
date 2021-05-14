@@ -646,6 +646,33 @@
 }
 
 @media screen and (max-width: 575px) {
+  .about__intro-absolute {
+    width: 100%;
+  }
+  .about__photo-contact {
+    position: relative;
+    width: 90%;
+    margin: 1rem;
+  }
+  .contact__description {
+    width: 100%;
+  }
+  .contact__div {
+    display: block;
+  }
+  .offers__offer {
+    width: 100%;
+  }
+  .squares {
+    width: 100%;
+  }
+  .squares__element {
+    width: 100%;
+  }
+  .squares__description {
+    position: relative;
+    width: 100%;
+  }
   .intro {
     width: 100%;
   }

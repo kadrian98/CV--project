@@ -224,9 +224,62 @@
 
 @media screen and (max-width: 575px){
 
+.about{
+          &__intro-absolute{
+                    width: 100%;
+          }
+
+
+
+          &__photo{
+                    &-contact{
+                              position: relative;
+                              width: 90%;
+                              margin: 1rem;
+                    }
+          }
+}
+
+.contact{
+
+          &__description{
+                    width: 100%;
+          }
+          &__div{
+                    display: block;
+          }
+
+         
+}
+
+
+
+.offers{
+          &__offer{
+                    width: 100%;
+          }
+}
+
+
+.squares{
+          width: 100%;
+          &__element{
+                    width: 100%;
+
+          }
+
+          &__description{
+                    position: relative;
+                    width: 100%;
+          }
+}
+
+
+
 .intro{
           width: 100%;
 }  
+
 
 
 }
