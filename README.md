@@ -1,14 +1,1 @@
-# CV-website
-# CV-website
-# CV-website
-# CV-website
-# CV-website
-# CV--project
-# CV--project
-# CV--project
-# CV--project
-# CV-project
-# CV-project
-# CV-project
-# CV-project
-# CV-project
+https://kaczmarek-cv.netlify.app/
